@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>RPS - Game</title>
+  </head>
+  <body>
+    <div class="top">
+        <p>ROUND</p>
+        <p id="round">1</p>
+        <p id="score"></p>
+    </div>
+    <div class="hands">
+      <img src="assets/paper.png" alt="" id="player-hand" />
+      <img src="assets/rock.png" alt="" id="opponent-hand" />
+    </div>
+    <div class="controls">
+      <div id="rock"><img src="assets/scissors.png" alt="" srcset=""></div>
+      <div id="paper"><img src="assets/scissors.png" alt="" srcset=""></div>
+      <div id="scissors"><img src="assets/scissors.png" alt="" srcset=""></div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

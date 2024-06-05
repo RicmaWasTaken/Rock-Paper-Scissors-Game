@@ -1,0 +1,51 @@
+html, body{
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+.top{
+    background-color: burlywood;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    width: 20%;
+    margin: auto;
+}
+.top p{
+    margin: 0;
+}
+.hands{
+    background-color: darkorange;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    min-height: 50vh;
+}
+.hands img{
+    position: absolute;
+    transition: all 0.2s;
+}
+.hands #player-hand{
+    left: -25px;
+}
+.hands #opponent-hand{
+    right: -25px;
+    transform: scaleX(-1);
+}
+.controls{
+    background-color: pink;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    gap: 2vw;
+}
+.controls img{
+    width: 10vw;
+    height: auto;
+}
