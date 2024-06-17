@@ -7,13 +7,16 @@ body{
     display: flex;
     flex-direction: column;
     background-color: aquamarine;
+    width: 100vw;
+    overflow-x: hidden;
 }
 .top{
     background-color: burlywood;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
     width: 20%;
-    margin: auto;
+    margin: 0 auto auto auto;
+    text-align: center;
 }
 .top p{
     margin: 0;
@@ -31,10 +34,11 @@ body{
 }
 .hands #player-hand{
     left: -25px;
+    transform-origin: 0% 100%;
 }
 .hands #opponent-hand{
     right: -25px;
-    transform: scaleX(-1);
+    transform-origin: right;
 }
 .controls{
     background-color: pink;
